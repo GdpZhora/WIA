@@ -1,0 +1,44 @@
+#ifndef GMENU_H
+#define GMENU_H
+
+
+class GMenuClass
+{
+public:
+	GMenuClass();
+	enum PageMenu {PM_MAIN,PM_SINGLE,PM_MULTI,PM_OPTIONS,PM_CREDIT};
+	bool Draw(LPDIRECT3DDEVICE9 *ppDev);
+	int Click();
+	bool Reset();
+	bool Load(LPDIRECT3DDEVICE9 *ppDev);
+//	bool Create();
+	void Delete();
+	byte NumBot;
+
+private:
+	byte NumUr;
+	byte NumPunkt;
+	PageMenu _page;
+	LPDIRECT3DTEXTURE9 TexFonMain;
+	LPDIRECT3DTEXTURE9 TexFonMenu;
+	LPDIRECT3DTEXTURE9 TexFonCredit;
+	LPDIRECT3DTEXTURE9 TexButton[16];
+	LPDIRECT3DTEXTURE9 TexCur;
+	LPDIRECT3DTEXTURE9 TexBot[8];
+	LPDIRECT3DVERTEXBUFFER9 pVBFon;
+	LPDIRECT3DINDEXBUFFER9 pIBFon;
+	LPDIRECT3DVERTEXBUFFER9 pVBCur;
+	LPDIRECT3DINDEXBUFFER9 pIBCur;
+	LPDIRECT3DVERTEXBUFFER9 pVBButton;
+	LPDIRECT3DINDEXBUFFER9 pIBButton;
+	LPDIRECT3DVERTEXBUFFER9 pVBBot;
+	LPDIRECT3DINDEXBUFFER9 pIBBot;
+	Dop *Mas;
+	LPVW But1;
+	LPVW Bot1;
+	ID3DXFont* pFontCredit;
+	ID3DXFont* pFontObj;
+	ID3DXFont* pFontOpis;
+};
+
+#endif

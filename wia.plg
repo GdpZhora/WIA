@@ -1,0 +1,46 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: War in Afganistan - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "D:\DOCUME~1\GDP_ZH~1\LOCALS~1\Temp\RSP3.tmp" with contents
+[
+/nologo /ML /W3 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_MBCS" /Fp"Release/wia.pch" /YX /Fo"Release/" /Fd"Release/" /FD /c 
+"E:\Документы Gdp_Zhora\Игровой проект\WIA\Engine.cpp"
+]
+Creating command line "cl.exe @D:\DOCUME~1\GDP_ZH~1\LOCALS~1\Temp\RSP3.tmp" 
+Creating temporary file "D:\DOCUME~1\GDP_ZH~1\LOCALS~1\Temp\RSP4.tmp" with contents
+[
+d3d9.lib d3dx9.lib d3dxof.lib dxguid.lib dinput.lib dinput8.lib winmm.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /nologo /subsystem:windows /incremental:no /pdb:"wia.pdb" /debug /machine:I386 /out:"wia.exe" 
+".\Release\Camera.obj"
+".\Release\Engine.obj"
+".\Release\GInput.obj"
+".\Release\GObjects.obj"
+".\Release\main.obj"
+".\Release\men.obj"
+".\Release\terrain.obj"
+".\Release\World.obj"
+".\Release\Direct3D.obj"
+".\Release\XFile.obj"
+".\Release\XParser.obj"
+]
+Creating command line "link.exe @D:\DOCUME~1\GDP_ZH~1\LOCALS~1\Temp\RSP4.tmp"
+<h3>Output Window</h3>
+Compiling...
+Engine.cpp
+D:\DXSDK\Include\dinput.h: DIRECTINPUT_VERSION undefined. Defaulting to version 0x0800
+E:\Документы Gdp_Zhora\Игровой проект\WIA\GInput.h(26) : warning C4229: anachronism used : modifiers on data are ignored
+E:\Документы Gdp_Zhora\Игровой проект\WIA\Engine.cpp(325) : warning C4305: 'argument' : truncation from 'const double' to 'float'
+E:\Документы Gdp_Zhora\Игровой проект\WIA\Engine.cpp(341) : warning C4700: local variable 'Fp' used without having been initialized
+Linking...
+
+
+
+<h3>Results</h3>
+wia.exe - 0 error(s), 3 warning(s)
+</pre>
+</body>
+</html>
